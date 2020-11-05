@@ -25,6 +25,7 @@
   --transition-250: all 250ms ease-in-out;
   --transition-350: all 350ms ease-in-out;
   --transition-450: all 450ms ease-in-out;
+  --transition-1000: all 1s ease-in-out;
 }
 
 html,
@@ -38,6 +39,17 @@ body {
   background-color: var(--bgColor);
 }
 
+#name {
+  -webkit-transition: var(--transition-1000);
+  transition: var(--transition-1000);
+}
+#home-btn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 1000;
+}
 /* utility classes */
 /* container */
 .container {
@@ -76,12 +88,12 @@ body {
   width: 1.5rem;
   position: relative;
   left: 2px;
-  vertical-align: bottom
-  ;
+  vertical-align: bottom;
 }
 
 .link:hover {
   transform: scale(1.05);
+  -webkit-transition: var(--transition-350);
   transition: var(--transition-350);
 }
 
@@ -92,12 +104,19 @@ body {
 /* nav */
 .top-nav {
   width: 100%;
-  /* padding: 1rem 5%; */
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
 }
+  .nav-right article a {
+    border-bottom: 2px solid transparent;
+  }
+  .nav-right article a:hover {
+    border-bottom: 2px solid var(--white);
+    -webkit-transition: var(--transition-350);
+    transition: var(--transition-350);
+  }
 
 /* heading */
 .heading {
@@ -1096,7 +1115,7 @@ li {
     display: none;
   }
 }
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1051px) {
   .bottom-nav {
     display: none;
   }

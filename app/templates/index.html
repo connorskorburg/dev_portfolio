@@ -7,8 +7,13 @@
   {% load static %}
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <script defer src="{% static 'js/app.js' %}"></script>
 </head>
 <body>
+  <span id="top"></span>
+  <a href="#top" id="home-btn">
+    <img src="../static/images/top.svg" alt="To top">
+  </a>
   <!-- top nav -->
   <nav class="top-nav flex">
     <nav class="w-50 bg-white py-1 pl-5">
@@ -36,7 +41,7 @@
     <!-- hero details and heading -->
     <section class="flex hero-left hero-inner bg-white pl-5 pr-1">
       <article>
-        <h1 class="heading mb-2 text-primary">Connor Skorburg</h1>
+        <h1 id="name" class="heading mb-2 text-primary">Connor Skorburg</h1>
         <img src="../static/images/hero.svg" alt="Hero Image" class="img-mobile">
         <p class="info text-secondary-dark">I create products and experiences for clients and businesses</p>
         <p class="text-mobile ta-center text-secondary-dark pt-1">I create products and experiences for clients and businesses</p>
