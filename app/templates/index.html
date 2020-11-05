@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connor Skorburg</title>
+  {% load static %}
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <!-- top nav -->
+  <nav class="top-nav flex">
+    <nav class="w-50 bg-white py-1 pl-5">
+      <h1 class="text-primary text-head">
+        <span class="text-secondary">{</span> CS <span class="text-secondary">}</span>
+      </h1>
+    </nav>
+    <nav class="nav-right flex w-50 py-1 bg-primary pr-5">
+      <article class="ml-auto">
+        <a class="ml-2 text-bg font-bold" href="#about">About</a>
+        <a class="ml-2 text-bg font-bold" href="#work">Work</a>
+        <a class="ml-2 text-bg font-bold" href="#contact">Contact</a>
+      </article>
+    </nav>
+  </nav>
+
+  <!-- main hero content -->
+  <main id="hero" class="w-100 flex hero-outer just-center">
+    <!-- hero details and heading -->
+    <section class="flex hero-left hero-inner bg-white pl-5 pr-1">
+      <article>
+        <h1 class="heading mb-2 text-primary">Connor Skorburg</h1>
+        <img src="../static/images/hero.svg" alt="Hero Image" class="img-mobile">
+        <p class="info text-secondary-dark">I create products and experiences for clients and businesses</p>
+        <p class="text-mobile ta-center text-secondary-dark pt-1">I create products and experiences for clients and businesses</p>
+        <a href="#work" class="btn ta-center d-inline-block btn-secondary mt-2">My Work</a>
+      </article>
+    </section>
+    <!-- hero img section -->
+    <section class="w-50 bg-primary hero-right hero-inner flex">
+      <img class="hero-img" src="../static/images/hero.svg" alt="Hero Image">
+    </section>
+  </main>
+
+  <!-- about section -->
+  <main id="about" class="w-100 flex just-center bg-secondary">
+    <!-- about img section -->
+    <section class="about-left flex hero-inner bg-secondary w-50 pl-5 pr-1">
+      <img class="about-img" src="../static/images/about.svg" alt="About Image">
+    </section>
+    <!-- about details and heading -->
+    <section class="about-right flex hero-inner bg-white w-50 pl-5 pr-5">
+      <article>
+        <h2 class="sub-heading text-primary ta-center">About</h2>
+        <img class="img-mobile" src="../static/images/about.svg" alt="About Image">
+        <p class=" mt-2 text-head text-secondary-dark ta-center">I’m Connor, a 20 year old motivated and hard-working programmer. I am a Full Stack Developer who enjoys designing web applications, creating seemless experiences for users, and finding solutions to challenging problems.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- my work section -->
+  <main id="work" class="w-100 bg-primary pt-4">
+    <h2 class="sub-heading ta-center text-white py-4">My Work</h2>
+    <!-- filmhunter card -->
+    <section class="flex pr-5 pl-5 py-3 just-center bt-white-3">
+      <article class="w-50 pr-2">
+        <h3 class="sub-heading-m ta-center pt-2 text-white">Filmhunter.co</h3>
+        <p class="text-head ta-center pt-3 text-primary-light">App that allows users to fetch Movies and TV Shows from the MovieDB API.</p>
+        <!-- tech used -->
+        <div class="tech-used text-white">
+          <ul>
+            <li>
+              <img class="icon" src="../static/images/react.svg" alt="React Icon">
+              React.js
+            </li>
+            <li>
+              <img class="icon" src="../static/images/react.svg" alt="react Icon">
+              React Hooks
+            </li>
+            <li>
+              <img class="icon" src="../static/images/css-3.svg" alt="CSS3 Icon">
+              CSS3
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img src="../static/images/react.svg" alt="React Icon" class="icon">
+              Context API
+            </li>
+            <li>
+              <img src="../static/images/javascript.svg" alt="JavaScript Icon" class="icon">
+              API Integration
+            </li>
+          </ul>
+        </div>
+      </article>
+      <!-- filmhunter img and links -->
+      <article class="w-50 my-auto h-fit">
+        <img class="img pl-2" src="../static/images/filmhunter-home.png" alt="Filmhunter Home Page">
+        <div class="flex pl-2 mt-1 ta-center">
+          <a href="https://github.com/connorskorburg/filmhunter" class="btn-source-code align-start pb-2 w-50 btn-primary-light text-white">Source Code 
+          <img class="github-icon" src="../static/images/github-original.svg" alt="Github Icon">
+          </a>
+          <a class="btn-link text-primary btn-secondary w-50 ml-1" href="https://filmhunter.co">Visit Filmhunter</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- mytrade card -->
+    <section class="flex pr-5 pl-5 py-3 just-center bt-white-3">
+      <article class="w-50 pr-2">
+        <h3 class="sub-heading-m ta-center pt-2 text-white">MyTrade.ws</h3>
+        <p class="text-head ta-center pt-3 text-primary-light">Website that allows users to simulate stock trades in real time. Buy, sell, and keep up with stock news!</p>
+        <!-- tech used -->
+        <div class="tech-used text-white">
+          <ul>
+            <li>
+              <img class="icon" src="../static/images/html.svg" alt="HTML5 Icon">
+              HTML5
+            </li>
+            <li>
+              <img class="icon" src="../static/images/css-3.svg" alt="CSS3 Icon">
+              CSS3
+            </li>
+            <li>
+              <img class="icon" src="../static/images/javascript.svg" alt="JavaScript Icon">
+              JavaScript
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img src="../static/images/django-white.svg" alt="Django White Icon" class="icon">
+              Django
+            </li>
+            <li>
+              <img src="../static/images/mysql.svg" alt="MySQL Icon" class="icon">
+              MySQL
+            </li>
+            <li>
+              <img src="../static/images/javascript.svg" alt="JavaScript Icon" class="icon">
+              API Integration
+            </li>
+          </ul>
+        </div>
+      </article>
+      <!-- mytrade details and image -->
+      <article class="w-50 my-auto h-fit">
+        <img class="img pl-2" src="../static/images/mytrade-home.png" alt="MyTrade Home Page">
+        <div class="flex pl-2 mt-1 ta-center">
+          <a href="https://github.com/connorskorburg/My-Trade" class="w-50 btn btn-primary-light text-white">Source Code 
+          <img class="github-icon" src="../static/images/github-original.svg" alt="Github Icon">
+          </a>
+          <a class="btn text-primary btn-secondary w-50 ml-1" href="https://mytrade.ws">Visit MyTrade</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- trvl trak card -->
+    <section class="flex pr-5 pl-5 py-3 just-center by-white-3">
+      <article class="w-50 pr-2">
+        <h3 class="sub-heading-m ta-center pt-2 text-white">TrvlTrak.com</h3>
+        <p class="text-head ta-center pt-3 text-primary-light">App that allows users to sign up and pin and save their adventures/trips using the Google Maps API.</p>
+        <!-- text white -->
+        <div class="tech-used text-white">
+          <ul>
+            <li>
+              <img class="icon" src="../static/images/html.svg" alt="HTML5 Icon">
+              HTML5
+            </li>
+            <li>
+              <img class="icon" src="../static/images/css-3.svg" alt="CSS3 Icon">
+              CSS3
+            </li>
+            <li>
+              <img class="icon" src="../static/images/javascript.svg" alt="JavaScript Icon">
+              JavaScript
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img src="../static/images/django-white.svg" alt="Django White Icon" class="icon">
+              Django
+            </li>
+            <li>
+              <img src="../static/images/mysql.svg" alt="MySQL Icon" class="icon">
+              MySQL
+            </li>
+            <li>
+              <img src="../static/images/javascript.svg" alt="JavaScript Icon" class="icon">
+              API Integration
+            </li>
+          </ul>
+        </div>
+      </article>
+      <!-- trvl trak img and details -->
+      <article class="w-50 my-auto h-fit">
+        <img class="img pl-2" src="../static/images/trvltrak.png" alt="TrvlTrak Home Page">
+        <div class="flex pl-2 mt-1 ta-center">
+          <a href="https://github.com/connorskorburg/Trvl-Trak" class="w-50 btn btn-primary-light text-white">Source Code 
+          <img class="github-icon" src="../static/images/github-original.svg" alt="Github Icon">
+          </a>
+          <a class="btn text-primary btn-secondary w-50 ml-1" href="https://trvltrak.com">Visit TrvlTrak</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <main id="contact" class="w-100 bg-secondary pb-3">
+    <h2 class="sub-heading ta-center text-primary py-4 bb-white-3 mb-3">Contact Me</h2>
+    <section id="contact-inner" class="flex just-between text-primary font-bold w-100 ta-center pl-5 pr-5">
+      <!-- mail icon -->
+      <article>
+        <img src="../static/images/mail-icon.svg" alt="Mail Icon">
+        <p class="text-head-m">connorskorburgdev@gmail.com</p>
+      </article>
+      <!-- linkedin icon -->
+      <article>
+        <a href="https://linkedin.com/in/connor-skorburg">
+          <img class="link" src="../static/images/linkedin-icon.svg" alt="Linkedin Icon">
+        </a>
+        <p class="text-head-m">linkedin.com/in/connor-skorburg</p>
+      </article>
+      <!-- github icon -->
+      <article>
+        <a href="https://github.com/connorskorburg">
+          <img class="link" src="../static/images/github-icon.svg" alt="Github Icon">
+        </a>
+        <p class="text-head-m">github.com/connorskorburg</p>
+      </article>
+    </section>
+  </main>
+
+</body>
+</html>
