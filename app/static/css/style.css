@@ -39,10 +39,6 @@ body {
   background-color: var(--bgColor);
 }
 
-#name {
-  -webkit-transition: var(--transition-1000);
-  transition: var(--transition-1000);
-}
 #home-btn {
   display: none;
   position: fixed;
